@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+    font-family: 'Assistant', sans-serif;
+}
+
+
+#canvas {
+    width: 100%;
+    height: 300px;
+    margin-top: 0px;
+    background-color: transparent;
+}   
+
+
+table, td, tr {
+    border: solid white 2px;
+    width: 100%;
+}
+
+h1 {
+    color: white;
+}
