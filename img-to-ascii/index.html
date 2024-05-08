@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
 <body>
-    <input type="file" id="fileSrc" accept="image/png, image/jpeg, video/mp4"><br><br>
-    <input type="checkbox" id="customChar"/><label id="customCharCheckbox" for="customChar">Custom Characters</label><br><br>
-    <label id="customCharLabel" for="customCharText">Enter custom text:</label><input type="text" id="customCharText"/>
-    <script type="text/javascript" src="main.js"></script>
+    <h1>Image-to-ASCII</h1>
+    <span>Choose image/video:</span><br>
+    <input type="file" id="fileUpload" accept="image/*, video/*"><br>
+    <span>Image/video URL:</span><br>
+    <input type="text" id="fileLink">&nbsp;<input type="button" id="linkSubmit" value="Submit"><br>
+    <span>Pixelation Value:</span>
+    <span id="vp">10</span><br>
+    <input type="range" id="pixelationSlider" min="1" max="50" value="10"><br>
+    <span>Font Size:</span>
+    <span id="vf">12</span><br>
+    <input type="range" id="fontSlider" min="1" max="26" value="12"><br>
+    <script src="index.js"></script>
 </body>
 </html>

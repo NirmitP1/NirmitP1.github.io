@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+h1 {
+    color: white;
+}
+
+span {
+    color: white;
+    margin: 0;
+    font-size: 12pt;
+    line-height: 12px;
+}
+
+p {
+    color: white;
+    margin: 0;
+    font-size: 12pt;
+    line-height: 12px;
+}
+
+#pixelationSlider, #fontSlider {
+    direction: ltr;
+}
