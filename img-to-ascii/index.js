@@ -121,6 +121,7 @@ document.getElementById("fileUpload").addEventListener("change", function(event)
         video.loop = true;
 
         video.addEventListener("loadedmetadata", function() {
+            video.exitFullScreen();
             video.play();
             canvas.height = this.videoHeight;
             canvas.width = this.videoWidth;
