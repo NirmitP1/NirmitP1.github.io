@@ -169,11 +169,13 @@ document.getElementById("linkSubmit").onclick = function() {
         video.crossOrigin = "Anonymous";
         video.muted = true;
         video.loop = true;
+        video.controlsList = "nofullscreen";
 
         video.addEventListener("loadedmetadata", function() {
             video.play();
             canvas.height = this.videoHeight;
             canvas.width = this.videoWidth;
+            video.controlList = "nofullscreen";
             videoControls(video);
             draw(video);
         });
